@@ -6,9 +6,7 @@ public class Person {
   private int fodtAar;
   
   public Person() {
-    this.fodtAar = 1972;
-    this.navn = "Thomas";
-    this.persId = 1;
+
   }
   
   public int getPersId() {
@@ -29,6 +27,12 @@ public class Person {
   public void setFodtAar(int fodtAar) {
     this.fodtAar = fodtAar;
   }
+
+  @Override
+  public String toString() {
+    return "Person [persId=" + persId + ", navn=" + navn + ", fodtAar=" + fodtAar + "]";
+  }
+  
   
   
 }
